@@ -1,57 +1,59 @@
 import React from 'react'
 import Container from './Container'
-import Flex from './Flex'
+
 import Logo from "../assets/logo.png"
 
 const Footer = () => {
   return (
     <>
-     <footer className='py-[58px] bg-[#EEEFFB] px-2'>
-    <Container>
-        <Flex className="flex-wrap">
-        <div className="lg:w-[15%] w-[30%]">
-                            <h3 className='font-sans text-[16px] font-bold text-[#262626] uppercase leading-[23px]'>menu</h3>
-                            <ul className='mt-4'>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Home</li>
-                                <li className='font-dmsans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Shop</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>About</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Contacts</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Journal</li>
-                            </ul>
+      <section className='pt-[95px] pb-[142px] bg-[#EEEFFB]'>
+            <Container>
+                <div className='font-josef flex text-[#8A8FB9]'>
+                    <div className="w-[40%]">
+                        <div className="pb-[31px]">
+                        <img src={Logo} alt="" className='w-[98px] h-[30px]' />
                         </div>
-                        <div className="lg:w-[15%] w-[30%]">
-                            <h3 className='font-sans text-[16px] font-bold text-[#262626] uppercase leading-[23px]'>shop</h3>
-                            <ul className='mt-4'>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Category 1</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Category 2</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Category 3</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Category 4</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Category 5</li>
-                            </ul>
+                        <div className="flex pb-[25px]">
+                            <input type="email" name="" id="" className='w-[266px] h-[40px] bg-[#D9D9D9] border rounded pl-2 outline-none' placeholder='Enter Email Address' />
+                            <p className='w-[100px] bg-[#FB2E86] h-[40px] py-[10px] text-white text-center cursor-pointer border rounded'>Sign Up</p>
                         </div>
-                        <div className="lg:w-[15%] w-[40%]">
-                            <h3 className='font-sans text-[16px] font-bold text-[#262626] uppercase leading-[23px]'>help</h3>
-                            <ul className='mt-4'>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Privacy Policy</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Terms & Conditions</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Special E-shop</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Shipping</li>
-                                <li className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] py-1'>Secure Payments</li>
-                            </ul>
-                        </div>
-                        <div className="lg:w-[30%] w-[50%] mt-5 lg:mt-0">
-                            <div className="font-sans text-[16px] font-bold text-[#262626] leading-[27px]"><a href="tel:+052">(052) 611-5711</a></div>
-                            <div className="font-sans text-[16px] font-bold text-[#262626] leading-[27px]"><a href="mailto:">company@domain.com</a></div>
-                            <p className='font-sans text-[14px] font-normal text-[#6D6D6D] leading-[23px] mt-4'>575 Crescent Ave. Quakertown, PA 18951</p>
-                        </div>
-                        <div className="lg:w-[25%]  w-[50%] flex justify-end lg:justify-start items-center lg:items-start">
-                            <div className="lg:w-[121px] w-[100px] lg:h-[27px] h-[20px]">
-                                <img src={Logo} className='w-full h-full' alt="logo" />
-                            </div>
-                        </div>
-        </Flex>
-    </Container>
-   </footer>
+                        <p className='text-[20px]'>Contact Info</p>
+                        <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+                    <div className="w-[20%]">
+                        <ul>
+                            <h2 className='text-[#000000] text-[20px] mb-[42px]'>Catagories</h2>
+                            <li className='pb-[21px]'>Laptops & Computers</li>
+                            <li className='pb-[21px]'>Cameras & Photography</li>
+                            <li className='pb-[21px]'>Smart Phones & Tablets</li>
+                            <li className='pb-[21px]'>Video Games & Consoles</li>
+                            <li className='pb-[21px]'>Waterproof Headphones</li>
+                        </ul>
+                    </div>
+                    <div className="w-[20%]">
+                        <ul>
+                            <h2 className='text-[#000000] text-[20px] mb-[42px]'>Customer Care</h2>
+                            <li className='pb-[21px]'>My Account</li>
+                            <li className='pb-[21px]'>Discount</li>
+                            <li className='pb-[21px]'>Returns</li>
+                            <li className='pb-[21px]'>Orders History</li>
+                            <li className='pb-[21px]'>Order Tracking</li>
+                        </ul>
+                    </div>
+                    <div className="w-[20%]">
+                        <ul>
+                            <h2 className='text-[#000000] text-[20px] mb-[42px]'>Pages</h2>
+                            <li className='pb-[21px]'>Blog</li>
+                            <li className='pb-[21px]'>Browse the Shop</li>
+                            <li className='pb-[21px]'>Category</li>
+                            <li className='pb-[21px]'>Pre-Built Pages</li>
+                            <li className='pb-[21px]'>Visual Composer Elements</li>
+                            <li className='pb-[21px]'>WooCommerce Pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </Container>
+        </section>
     
     </>
   )
