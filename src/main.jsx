@@ -9,6 +9,8 @@ import {
 import "./index.css";
 import Rootlayout from "./components/Rootlayout";
 import Home from "./pages/Home";
+import { ContextApi } from "./components/ContextApi";
+import "slick-carousel/slick/slick.css";
 
 let router = createBrowserRouter(createRoutesFromElements(
   <Route element={<Rootlayout />}>
@@ -23,8 +25,14 @@ let router = createBrowserRouter(createRoutesFromElements(
 ))
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+
+ 
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <ContextApi> 
+       <RouterProvider router={router} />
+     </ContextApi>
+  
   </React.StrictMode>
+  
 );
 
