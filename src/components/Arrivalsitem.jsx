@@ -21,7 +21,7 @@ const Arrivalsitem = ({item}) => {
 
         <>
             <div className="">
-                <div className='lg:w-[99%] w-full px-4 py-5 group shadow-lg'>
+                <div className='lg:w-[90%] w-full px-2 py-5 group shadow-lg'>
                     <div className="relative bg-[#F6F7FB]    w-full h-[236px] flex items-center justify-center  group overflow-hidden cursor-pointer">
                         <img src={item.thumbnail} className='h-[278px] w-[278px] ' alt="" />
                         <div className="  absolute left-[-100px] top-0 duration-700 ease-in-out w-full flex items-center justify-start group-hover:left-0 ">
