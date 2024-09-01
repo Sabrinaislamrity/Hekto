@@ -22,8 +22,9 @@ const Navbar = () => {
                             <li><Link to={"/page"}>Pages</Link></li>
                             <li><Link to={"/products"}>Products</Link></li>
                             <li><Link to={"/blog"}>Blog</Link></li>
+                            <li><Link to={"/aboutus"}>About us</Link></li>
                             <li>Shop</li>
-                            <li>Contact</li>
+                            <li><Link to={"/contact"}>Contact</Link></li>
                         </ul>
                     </div>
                     <div className="w-[30%] flex items-center">

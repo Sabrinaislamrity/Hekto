@@ -4,6 +4,27 @@ import Flex from './Flex'
 import Arrivalsitem from './Arrivalsitem'
 import { apiData } from './ContextApi'
 import Slider from "react-slick";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { Link } from 'react-router-dom'
+
+
+
+
+
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+      <div className='w-[64px] h-[64px] rounded-full bg-[#979797] leading-[60px] text-[25px] text-white text-center cursor-pointer absolute right-0 lg:right-[-30px] top-[50%]' onClick={onClick} ><IoIosArrowDroprightCircle  className='inline-block' /></div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+      <div className='w-[64px] h-[64px] rounded-full bg-[#979797] leading-[60px] text-[25px] text-white text-center cursor-pointer absolute left-0 lg:left-[-30px] top-[50%] z-50' onClick={onClick} ><IoIosArrowDropleftCircle className='inline-block' /></div>
+  );
+}
 
 
 const Featro = () => {
@@ -12,13 +33,24 @@ const Featro = () => {
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    arrows: false,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+      
+        }
+      },
+  
+    ]
 
 };
   
@@ -42,9 +74,11 @@ const Featro = () => {
            
             {data.map((item)=>(
 
+              <Link to="/page">
+
                     <Arrivalsitem item={item}/>
                  
-              
+                    </Link>
             ))}
             </Slider>
            

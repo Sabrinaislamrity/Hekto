@@ -9,6 +9,7 @@ import Group from '../components/Group'
 import Discount from '../components/Discount'
 import ECommerceBar from '../components/ECommerceBar'
 // import TopCategories from '../components/TopCategories'
+import LatestBlog from '../components/LatestBlog'
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
     <Group/>
     <Discount/>
     {/* <TopCategories/> */}
+    <LatestBlog/>
     
     </>
   )

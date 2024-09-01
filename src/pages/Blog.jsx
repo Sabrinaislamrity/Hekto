@@ -13,6 +13,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Container from '../components/Container'
+import { Link } from 'react-router-dom'
 
 
 const Blog = () => {
@@ -40,9 +41,10 @@ const Blog = () => {
                                 <h2 className='font-Sans font-bold text-[30px] text-[#151875] mt-5'>Mauris at orci non vulputate diam tincidunt nec.</h2>
                                 <p className='font-Sans font-semibold text-[16px] text-[#3F509E] mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.</p>
                                 <div className="flex mt-8 items-center ">
-                                    <h4 className='font-Sans font-semibold text-[24px] text-[#FB2E86] '>Read More  </h4>
-                                    <FaArrowRight />
-
+                                    <Link to="/aboutus" >
+                                <button className='absolute -bottom-12 text-[30px] font-medium py-[10px] px-[15px]
+                                 bg-[#08D15F] rounded-md text-white group-hover:bottom-3 duration-500 ease-in-out font-lato'>About us</button>
+                                 </Link>
                                 </div>
                             </div>
 
@@ -57,6 +59,8 @@ const Blog = () => {
                                 <div className="flex mt-8 items-center ">
                                     <h4 className='font-Sans font-semibold text-[24px] text-[#FB2E86] '>Read More  </h4>
                                     <FaArrowRight />
+
+                                
 
                                 </div>
 

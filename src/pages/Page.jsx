@@ -1,19 +1,60 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Container from '../components/Container'
 import ECommerceBar from '../components/ECommerceBar'
-import gro1 from "../assets/gro1.png"
 import get02 from "../assets/get02.png"
 import { Link } from 'react-router-dom'
+import { apiData } from '../components/ContextApi'
+import { CiHeart } from "react-icons/ci";
+import { IoMdSearch } from "react-icons/io";
+import { CiShoppingCart } from "react-icons/ci";
+import Post from '../components/pagination/Post'
+import PaginationArea from '../components/pagination/PaginationArea'
 
 const Page = () => {
+    let data = useContext(apiData)
+
+    let[currentPage, setCunnetPage] = useState(1)
+    let [perPage, setPerPage] = useState(8)
+    let lastPage = currentPage * perPage
+    let firstPage = lastPage - perPage
+   
+
+    let allData = data.slice(firstPage, lastPage)
+
+    let pageNumber = []
+
+    for(let i= 0; i < Math.ceil(data.length / perPage); i++){
+        pageNumber.push(i)
+        
+    }
+    
+
+    let paginate = (pageNumber)=>{
+        setCunnetPage(pageNumber + 1);
+        
+    }
+    
+    let next = () =>{
+        if (currentPage < pageNumber.length) {
+            setCunnetPage((state) => state + 1) 
+        }
+      
+     }
+     let prev = () =>{
+        if(currentPage > 1){
+            setCunnetPage((state) => state -1)
+        }
+    }
+    
+    
+
     return (
         <>
-
-            <section className='py-[100px] px-3 '>
+            <section className='py-[100px] px-3'>
                 <div className="bg-[#F6F5FF] py-[100px]">
                     <Container>
                         <h3 className='font-Sans font-bold text-[42px] text-[#0D0E43]'>Shop Grid Default</h3>
-                        <div className=" flex">
+                        <div className="flex">
                             <h4 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>Home .</h4>
                             <h3 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>Pages .</h3>
                             <p className='font-Sans font-bold text-[16px] text-[#FB2E86]'>Shop Grid Default</p>
@@ -22,42 +63,20 @@ const Page = () => {
                 </div>
 
                 <Container>
-
-
-
-
                     <div className="">
                         <ECommerceBar />
                     </div>
 
-                    <Link to={"/shoplist"}>
-                    <div className="mt-[50px] lg:flex   justify-between px-3">
-                        <div className="lg:w-[24%] w-full sm:w-[50%]">
-                            <div className="py-[30px] px-[30px] bg-[#EBF4F3]">
-                                <img src={gro1} alt="" />
-                            </div>
-                            <div className=" text-center mt-[30px]">
-                                <h3 className='font-Sans font-bold text-[22px] text-[#0D0E43]'>Vel elit euismod</h3>
-                                <div className="flex justify-center space-x-2 mt-[12px]">
-                                    <div className="w-4 h-4 rounded-full bg-[#DE9034] group-hover:bg-[#DE9034] duration-500 ease-in-out"></div>
-                                    <div className="w-4 h-4 rounded-full bg-[#F701A8] group-hover:bg-[#d50191] duration-500 ease-in-out"></div>
-                                    <div className="w-4 h-4 rounded-full bg-[#8568FF] group-hover:bg-[#FFF] duration-500 ease-in-out"></div>
-                                </div>
+                    <div className="flex flex-wrap -mx-3 mt-[50px]">
 
-                               <div className="flex justify-center space-x-2">
-                               <h4 className='font-Sans font-semibold text-[16px] text-[#000000]'>$26.00  </h4>
-                               <h4 className='font-Sans font-semibold text-[16px] line-through text-[#FB2E86]'>$26.00  </h4>
-                               </div>
-
-
-
-                            </div>
-                        </div>
-
+                        <Post allData={allData}/>
+                
 
                     </div>
-                    </Link>
-
+                    <div className="text-end">
+                        <PaginationArea pageNumber={pageNumber} paginate={paginate} currentPage={currentPage}
+                        next={next} prev={prev}/>
+                    </div>
 
                     <div className="pt-[100px] px-3">
                         <div className="lg:flex justify-between">
@@ -66,19 +85,10 @@ const Page = () => {
                                 <img src={get02} alt="" />
                             </div>
                             <div className="w-[15%]"></div>
-
                         </div>
                     </div>
-
-
-
                 </Container>
-
-
             </section>
-
-
-
         </>
     )
 }
