@@ -1,106 +1,92 @@
-import React from 'react'
-import Container from '../components/Container'
-import contact from "../assets/contact.png"
+import React from 'react';
+import Container from '../components/Container';
+import contact from "../assets/contact.png";
 
 const Contact = () => {
   return (
-    <>
+    <section className='py-16 px-4 bg-[#F6F5FF]'>
+      <Container>
+        <div className="text-center mb-12">
+          <h3 className='font-Sans font-bold text-4xl text-[#0D0E43]'>Contact</h3>
+          <div className="flex justify-center mt-4">
+            <h4 className='font-Sans font-semibold text-lg text-[#0D0E43]'>Home .</h4>
+            <h4 className='font-Sans font-semibold text-lg text-[#0D0E43]'>Pages .</h4>
+            <p className='font-Sans font-semibold text-lg text-[#FB2E86]'>Contact</p>
+          </div>
+        </div>
 
-<section className='py-[100px] px-3 '>
-                <div className="bg-[#F6F5FF] py-[100px]">
-                    <Container>
+        <div className="flex flex-col lg:flex-row justify-between bg-white p-8 rounded-lg shadow-lg">
+          <div className="lg:w-[48%] mb-8 lg:mb-0">
+            <div className="mb-8">
+              <h3 className='font-Sans font-bold text-2xl text-[#0D0E43] mb-4 relative'>
+                Information About Us
+                {/* <span className='absolute top-1/2 left-0 transform -translate-y-1/2 w-3 h-3 bg-[#0D0E43] rounded-full'></span>
+                <span className='absolute top-1/2 left-6 transform -translate-y-1/2 w-3 h-3 bg-[#FF27B7] rounded-full'></span>
+                <span className='absolute top-1/2 left-12 transform -translate-y-1/2 w-3 h-3 bg-[#37DAF3] rounded-full'></span> */}
+              </h3>
+              <p className='font-Sans font-medium text-base text-[#0D0E43] leading-relaxed'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.
+              </p>
+            </div>
+            <div className="mb-8">
+              <h3 className='font-Sans font-bold text-2xl text-[#0D0E43] mb-4'>Get in Touch</h3>
+              <p className='font-Sans font-medium text-base text-[#0D0E43] leading-relaxed'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices tristique amet erat vitae eget dolor los vitae lobortis quis bibendum quam.
+              </p>
+            </div>
+            <form>
+              <div className="flex flex-col md:flex-row gap-4 mb-6">
+                <input className='h-12 w-full border-2 border-[#0D0E43] rounded-lg px-4' type="text" placeholder='Your Name*' />
+                <input className='h-12 w-full border-2 border-[#0D0E43] rounded-lg px-4' type="text" placeholder='Your E-mail*' />
+              </div>
+              <input className='h-12 w-full border-2 border-[#0D0E43] rounded-lg px-4 mb-6' type="text" placeholder='Subject*' />
+              <textarea className='w-full border-2 border-[#0D0E43] rounded-lg px-4 py-3 resize-none mb-6' placeholder='Type Your Message'></textarea>
+              <button className='py-3 px-6 bg-[#FB2E86] text-white font-Sans font-bold text-base rounded-lg hover:bg-[#d52875] transition-colors'>
+                Send Mail
+              </button>
+            </form>
+          </div>
 
-                        <h3 className='font-Sans font-bold text-[42px] text-[#0D0E43]'>Contact</h3>
-                        <div className=" flex">
-                            <h4 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>Home .</h4>
-                            <h3 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>Pages .</h3>
-                            <p className='font-Sans font-bold text-[16px] text-[#FB2E86]'>Contact</p>
-                        </div>
-
-                    </Container>
+          <div className="lg:w-[48%]">
+            <h2 className='font-Sans font-bold text-2xl text-[#0D0E43] mb-6'>Contact Way</h2>
+            <div className="flex flex-col space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className='w-8 h-8 bg-[#5726DF] rounded-full'></div>
+                <div>
+                  <h3 className='font-Sans font-semibold text-base text-[#0D0E43]'>Tel: 877-67-88-99</h3>
+                  <h4 className='font-Sans font-semibold text-base text-[#0D0E43]'>E-Mail: shop@store.com</h4>
                 </div>
-        <Container>
-      
-                <div className="flex justify-between bg-[#fff] px-4 pb-24">
-                    <div className="w-[49%]">
-                        <div className="mt-12">
-                            <div className=" relative after:absolute after:contain-[''] after:top-[150px] after:left-0 after:w-[20px] after:h-[20px] after:bg-[#0D0E43] after:rounded-full  before:absolute before:contain-[''] before:top-[150px] before:left-[30px] before:w-[20px] before:h-[20px] before:bg-[#FF27B7] before:rounded-full">
-                            <h3 className='font-Sans font-bold text-[32px] text-[#0D0E43] relative after:absolute after:contain-[""] after:top-[150px] after:left-[60px] after:w-[20px] after:h-[20px] after:bg-[#37DAF3] after:rounded-full '>Information About us</h3>
-                            <p className='font-Sans font-semibold text-[16px] text-[#0D0E43] w-[80%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.</p>
-                            </div>
-                        </div>
-                            <div className="mt-40">
-                                <h3 className='font-Sans font-bold text-[32px] text-[#0D0E43] ' >Get in Touch</h3>
-                                <p className='font-Sans font-semibold text-[16px] text-[#0D0E43] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices  tristique amet erat vitae eget dolor los vitae lobortis quis bibendum quam.</p>
-                            </div>
-                            <div className=" flex justify-between mt-14">
-                                <div className="w-[48%]">
-                                <input className='h-[50px] w-full border-2 border-[#0D0E43] rounded-lg pl-2' type="text" placeholder='Your Name*' />
-                                </div>
-                                <div className="w-[48%]">
-                                <input className='h-[50px] w-full border-2 border-[#0D0E43] rounded-lg pl-2' type="text" placeholder='Your E-mail*' />
-                                </div>
-                               
-                            </div>
-
-                            <div className="w-full mt-5">
-                                <input className='h-[50px] w-full border-2 border-[#0D0E43] rounded-xl pl-2' type="text" placeholder='Subject**' />
-                                </div>
-                            <div className="w-full mt-5">
-                                <label for="">Type Your Messege :</label>
-                                <textarea className='w-full border-2 border-[#0D0E43] resize-none rounded-xl pl-2 pt-2  '  ></textarea>
-                               
-                                </div>
-
-                                <div className="w-full mt-5">
-                        <button className='py-[10px] px-[30px] bg-[#FB2E86] mt-[50px] font-Sans font-bold text-[16px] text-[#fff] rounded-lg'>Send Mail</button>
-                        </div>
-                    </div>
-                    <div className="w-[49%]">
-                       <div className="mt-12">
-                       <h2 className='font-Sans font-bold text-[32px] text-[#0D0E43]'>Contact Way</h2>
-                        <div className="flex justify-between">
-                           <div className="w-[50%]">
-                           <div className=" relative after:absolute after:contain-[''] after:top-[5px] after:left-0 after:h-[35px] after:w-[35px] after:bg-[#5726DF] after:rounded-full">
-                                <h3 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'>Tel: 877-67-88-99</h3>
-                                <h4 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'> E-Mail: shop@store.com</h4>
-                            </div>
-                           </div>
-                            <div className="w-[50%]">
-                            <div className=" relative after:absolute after:contain-[''] after:top-[5px] after:left-0 after:h-[35px] after:w-[35px] after:bg-[#FF27B7] after:rounded-full">
-                                <h3 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'>Support Forum</h3>
-                                <h4 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'> For over 24hr</h4>
-                            </div>
-                            </div>
-                            
-                            
-                        </div>
-                        <div className="flex justify-between mt-14">
-                            <div className="w-[50%]">
-                            <div className=" relative after:absolute after:contain-[''] after:top-[5px] after:left-0 after:h-[35px] after:w-[35px] after:bg-[#FFB265] after:rounded-full">
-                                <h3 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'>20 Margaret st, London</h3>
-                                <h4 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'> Great britain, 3NM98-LK</h4>
-                            </div>
-                            </div>
-                           <div className="w-[50%]">
-                           <div className=" relative after:absolute after:contain-[''] after:top-[5px] after:left-0 after:h-[35px] after:w-[35px] after:bg-[#1BE982] after:rounded-full">
-                                <h3 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'>Free standard shipping</h3>
-                                <h4 className='font-Sans font-semibold text-[16px] text-[#0D0E43] ml-10'> on all orders.</h4>
-                            </div>
-                           </div>
-                            
-                            
-                        </div>
-                       </div>
-                    <div className="mt-40">
-                        <img src={contact} alt="" />
-                    </div>
-                    </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className='w-8 h-8 bg-[#FF27B7] rounded-full'></div>
+                <div>
+                  <h3 className='font-Sans font-semibold text-base text-[#0D0E43]'>Support Forum</h3>
+                  <h4 className='font-Sans font-semibold text-base text-[#0D0E43]'>For over 24hr</h4>
                 </div>
-        </Container>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className='w-8 h-8 bg-[#FFB265] rounded-full'></div>
+                <div>
+                  <h3 className='font-Sans font-semibold text-base text-[#0D0E43]'>20 Margaret St, London</h3>
+                  <h4 className='font-Sans font-semibold text-base text-[#0D0E43]'>Great Britain, 3NM98-LK</h4>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className='w-8 h-8 bg-[#1BE982] rounded-full'></div>
+                <div>
+                  <h3 className='font-Sans font-semibold text-base text-[#0D0E43]'>Free Standard Shipping</h3>
+                  <h4 className='font-Sans font-semibold text-base text-[#0D0E43]'>On all orders.</h4>
+                </div>
+              </div>
+            </div>
+            <div className="mt-12">
+              <img src={contact} alt="Contact" className='w-full rounded-lg shadow-lg' />
+            </div>
+          </div>
+        </div>
+      </Container>
     </section>
-    </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

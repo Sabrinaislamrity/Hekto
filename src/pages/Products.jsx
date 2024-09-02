@@ -139,7 +139,7 @@ const Products = () => {
                         </div>
                     </div>
                     <div className=" lg:w-[73%] w-full">
-                        <Link to="/productDetails">
+                        <Link to="/product/:id">
 
                         <div className="lg:flex mt-[50px] shadow-lg space-x-4">
                     <div className="lg:w-[30%] w-full">

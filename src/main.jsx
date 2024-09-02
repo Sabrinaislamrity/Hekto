@@ -6,6 +6,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import store from "./store"
+import { Provider } from 'react-redux'
 import "./index.css";
 import Rootlayout from "./components/Rootlayout";
 import Home from "./pages/Home";
@@ -36,6 +38,12 @@ let router = createBrowserRouter(createRoutesFromElements(
     <Route index path='/yourorder' element={<Yourorder/>}></Route>
     <Route index path='/contact' element={<Contact/>}></Route>
     <Route index path='/aboutus' element={<AboutUs/>}></Route>
+
+
+
+
+
+    <Route index path='*' element={<Error/>}></Route>
     
     
 
@@ -53,7 +61,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
  
   <React.StrictMode>
      <ContextApi> 
+      <Provider store={store}>
        <RouterProvider router={router} />
+       </Provider>
      </ContextApi>
   
   </React.StrictMode>

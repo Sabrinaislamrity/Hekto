@@ -7,19 +7,22 @@ import cart02 from "../assets/cart02.png"
 const Proceed = () => {
   return (
     <>
-
-<section className=' py-24 px-3 bg-[#F6F5FF]'>
+<section className='py-[100px] px-3 bg-[#F6F5FF]'>
                 <Container>
-                    <div className="">
-                        <h3 className='font-Sans font-bold text-[42px] text-[#0D0E43]'>Hekto Demo</h3>
+                    <div className="text-center">
+                        <h3 className='font-Sans font-bold text-[42px] text-[#0D0E43] mb-4'>Hekto Demo</h3>
+                        
                     </div>
-                    <div className="mt-24">
+                </Container>
+                <Container>
+                  
+                    <div className="mt-24 ">
                         <h3 className='font-Sans font-bold text-[36px] text-[#0D0E43]'>Hekto Demo</h3>
                         <p className='font-Sans font-semibold text-[16px] text-[#0D0E43]'>Cart/ Information/ Shipping/ Payment</p>
                     </div>
                     <div className="">
                         <div className="lg:flex justify-between">
-                            <div className="lg:w-[63%] w-full py-9 px-5 bg-[#C1C8E1] rounded-lg">
+                            <div className="lg:w-[63%] w-full py-9 px-5 bg-[#e3e7f5] rounded-lg">
                                 <form className='' action=''>
                                     <div className=" flex justify-between items-center">
                                         <h3 className='font-Sans font-bold text-[24px] text-[#0D0E43]'>Contact Information</h3>
@@ -129,7 +132,7 @@ const Proceed = () => {
                                     <h3 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>£219.00</h3>
                                     </div>
                                </div>
-                               <div className="py-[20px] px-[20px] bg-[#0D0E43] mt-12 rounded-md">
+                               <div className="py-[20px] px-[20px] bg-[#3f407a] mt-12 rounded-md">
                                     <div className="flex justify-between   relative after:absolute after:contain-[''] after:bottom-[-10px] after:left-0 after:h-[1px] after:w-[100%] after:bg-[#fff]">
                                         <h3 className='font-Sans font-semibold text-[18px] text-[#fff]'>Subtotals:</h3>
                                         <h3 className='font-Sans font-semibold text-[18px] text-[#fff]'>£219.00</h3>
