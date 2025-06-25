@@ -1,11 +1,16 @@
-🛍️ Hekto - E-commerce UI Website
-Hekto is a responsive e-commerce website UI built using React and Tailwind CSS. This project replicates a modern online shopping experience with a clean layout, multiple pages, and dynamic routing using React Router. It was developed as part of a personal portfolio to showcase frontend skills in building component-based UI with modern tools.
+# 🛍️ Hekto - E-commerce UI Website
 
-🔗 Live Website: https://hekto-dusky.vercel.app/
+**Hekto** is a responsive e-commerce website UI built using **React** and **Tailwind CSS**. This project replicates a modern online shopping experience with a clean layout, multiple pages, and dynamic routing using React Router. It was developed as part of a personal portfolio to showcase frontend skills in building component-based UI with modern tools.
 
-🧪 How to Run Locally
+🔗 **Live Website:** [https://hekto-dusky.vercel.app/](https://hekto-dusky.vercel.app/)
+
+---
+
+## 🧪 How to Run Locally
+
 To run this project locally on your machine:
 
+```bash
 # 1. Clone the repository
 git clone https://github.com/yourusername/hekto-ecommerce-clone.git
 
@@ -17,6 +22,7 @@ npm install
 
 # 4. Run the app
 npm run dev
+
 
 
 
