@@ -1,4 +1,4 @@
-# 🛍️ Hekto - E-commerce UI Website
+<img width="1179" height="853" alt="TOUR" src="https://github.com/user-attachments/assets/9c21ad0d-c124-48a0-a234-c1887e936ab2" /># 🛍️ Hekto - E-commerce UI Website
 
 **Hekto** is a responsive e-commerce website UI built using **React** and **Tailwind CSS**. This project replicates a modern online shopping experience with a clean layout, multiple pages, and dynamic routing using React Router. It was developed as part of a personal portfolio to showcase frontend skills in building component-based UI with modern tools.
 
@@ -56,6 +56,19 @@ React Router for SPA routing
 Tailwind CSS utility-first styling
 
 Consistent color palette and font styling
+
+
+
+## 📸 Screenshots
+<img width="1010" height="892" alt="hektoo" src="https://github.com/user-attachments/assets/fa4badaa-f1a0-4986-bb5f-c5d9666a6bf8" />
+
+
+
+
+
+
+
+
 
 🛠️ Tech Stack
 ⚛️ Client-side:
