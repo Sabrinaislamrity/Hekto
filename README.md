@@ -60,7 +60,7 @@ Consistent color palette and font styling
 
 
 ## 📸 Screenshots
-<img width="1010" height="892" alt="hektoo" src="https://github.com/user-attachments/assets/fa4badaa-f1a0-4986-bb5f-c5d9666a6bf8" />
+
 
 
 
